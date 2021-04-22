@@ -28,7 +28,7 @@ class LoginForm extends Form {
       //full reload the app
 
       const { state } = this.props.location;
-
+      console.log(this.props.location);
       window.location = state ? state.from.pathname : "/";
     } catch (ex) {
       if (ex.response && ex.response.status === 400) {
